@@ -150,7 +150,7 @@ declare module "@finos/perspective" {
     };
 
     export type Table = {
-        columns(): Array<string>;
+        columns(): Promise<Array<string>>;
         clear(): Promise<void>;
         replace(data: TableData): Promise<void>;
         delete(): Promise<void>;
